@@ -41,6 +41,7 @@ body * {
 }
 /* PROFILE */
 #profile {
+  text-decoration: none;
   text-align: center;
   padding: 24px;
 }
