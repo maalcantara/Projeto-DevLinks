@@ -32,8 +32,10 @@ body * {
   color: var(--text-color);
 }
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 500px;
   margin: 56px auto 0px;
+  padding: 0 24px;
 }
 #bio {
   font-weight: 300px;
