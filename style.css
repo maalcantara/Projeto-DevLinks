@@ -75,10 +75,15 @@ body * {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
+
+  animation: slide-back 0.4s; /*animation */
 }
-.light #switch button {
-  right: 0;
-  left: initial;
+.light #switch button { /*tamanhos alterados para animation */
+  animation: slide-in 0.4s forwards;
+  /* forwars regra para executar animação e no final retornar propriedades */
+}
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
 }
 #switch span {
   display: block;
@@ -150,4 +155,19 @@ footer {
   padding: 24px;
   text-align: center;
   font-size: 16px;
+}
+/* ANIMATION BUTTON */
+@keyframes slide-in {
+  from {
+    left: 0;
+  } to {
+    left: 50%
+  }
+}
+@keyframes slide-back {
+  from {
+    left: 50%;
+  } to {
+    left: 0;
+  }
 }
